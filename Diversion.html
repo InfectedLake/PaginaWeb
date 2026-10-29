@@ -73,6 +73,7 @@
 
         .buttonPrincipal:hover {
             background-color: #880D1E;
+            transform: scale(1.05);
         }
 
         footer { 
@@ -94,6 +95,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 10px;
             margin-top: 10px;
         }
         .ImageCollage img{
@@ -101,7 +103,33 @@
             height: 120px;
             object-fit: cover;
             border: 1px solid #F26A8D;
-            margin: 5px;
+            display: block;
+        }
+        .buttonImage {
+            width: 120px;
+            height: 120px;
+            padding: 0;
+            border: 2px solid #F26A8D;
+            border-radius: 4px;
+            background-color: white;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .buttonImage:hover,
+        .buttonImage:focus-visible {
+            border-color: #880D1E;
+            transform: scale(1.05);
+        }
+        .buttonImage:focus-visible {
+            outline: 3px solid #CBEEF3;
+            outline-offset: 2px;
+        }
+        .buttonImage img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            object-fit: cover;
         }
 
         @media (max-width: 650px) {
@@ -133,7 +161,7 @@
 
     <div class="contenedor">
         <div class="contenido">
-            <img src="fotoTeto.jpg" alt="Foto Cantante">
+            <img src="kasane-teto-gi.gif" alt="Foto Cantante">
             <div class="WhoIsHe">
                 <h2>TETO</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, praesentium eos maxime laborum perferendis aspernatur deserunt officia ratione eum, vel nisi doloremque aperiam, tenetur illo fugit esse reiciendis iusto sit.</p>
@@ -141,20 +169,25 @@
             <div class="video-contenedor">
                 <video src="VideoTetoCancion.mp4" controls></video>
                 <div class="ImageCollage">
-                    <button class="buttonImage" onclick=" src='driving-in-car-teto.mp3' "> <img src="TetoHouse.png" alt="Foto Cantante"> </button>
-                    <img src="fotoTeto2.jpg" alt="Foto Cantante">
-                    <img src="fotoTeto3.jpg" alt="Foto Cantante">
-                    <img src="fotoTeto4.jpg" alt="Foto Cantante">
-                    <img src="fotoTeto5.jpg" alt="Foto Cantante"> 
-                    <img src="fotoTeto6.jpg" alt="Foto Cantante"> 
-                    <audio src="driving-in-car-teto.mp3"></audio>
+                    <audio id="tetoAudioCar" src="driving-in-car-teto.mp3" ></audio>
+                    <audio id="tetoAudioTeto" src="teto-teto.mp3" ></audio>
+                    <audio id="tetoAudio67" src="67-teto.mp3" ></audio>
+                    <audio id="tetoAudioKasaneTeto" src="kasane-teto.mp3" ></audio>
+                    <audio id="tetoAudioOhNo" src="oh-no-teto.mp3" ></audio>
+                    <audio id="tetoAudioWord" src="teto-word-of-the-day.mp3" ></audio>
+                    <button type="button" class="buttonImage" onclick="document.getElementById('tetoAudioTeto').play()"><img src="TetoHouse.png" alt="Reproducir Driving in Car"></button>
+                    <button type="button" class="buttonImage" onclick="document.getElementById('tetoAudioCar').play()"><img src="videoframe_9561.png" alt="Reproducir Driving in Car"></button>
+                    <button type="button" class="buttonImage" onclick="document.getElementById('tetoAudio67').play()"><img src="teto-67.jpg" alt="Reproducir Teto Teto"></button>
+                    <button type="button" class="buttonImage" onclick="document.getElementById('tetoAudioKasaneTeto').play()"><img src="tetoGood.png" alt="Reproducir Teto Teto"></button>
+                    <button type="button" class="buttonImage" onclick="document.getElementById('tetoAudioOhNo').play()"><img src="tetoScary.png" alt="Reproducir 67 Teto"></button>
+                    <button type="button" class="buttonImage" onclick="document.getElementById('tetoAudioWord').play()"><img src="tetoFih.png" alt="Reproducir 67 Teto"></button>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="botones">
-        <button class="buttonPrincipal" onclick="window.location.href='Principal.html'"><img src="TetoHouse.png"></button>
+        <button class="buttonPrincipal" onclick="window.location.href='Principal.html'">Principal</button>
         <button class="buttonPrincipal" onclick="window.location.href='Ciencia.html'">Ciencia</button>
     </div>
 
