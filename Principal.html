@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #CBEEF3;
+            color: #222;
+            margin: 0;
+        }
+
+        header {
+            background-color: #880D1E;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .presentacion,
+        .tabla {
+            width: 90%;
+            max-width: 900px;
+            margin: 25px auto 0;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .presentacion {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .presentacion img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 3px solid #F26A8D;
+        }
+
+        .WhoIsHe {
+            flex: 1;
+        }
+
+        h2 {
+            color: #880D1E;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #F49CBB;
+        }
+
+        .botones {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .buttonPrincipal {
+            background-color: #DD2D4A;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            margin: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .buttonPrincipal:hover {
+            background-color: #880D1E;
+        }
+
+        footer {
+            background-color: #F49CBB;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .presentacion {
+                display: block;
+                text-align: center;
+            }
+
+            .WhoIsHe {
+                text-align: left;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            .botones {
+                gap: 20px;
+            }
+        }
+    </style>
+
+</head>
+<header>
+    <h1>Mi página web</h1>
+</header>
+
+<body>
+
+    <div class="presentacion">
+        <img src="mifoto.jpg" alt="Mi foto">
+
+        <div class="WhoIsHe">
+            <h2>Quién soy</h2>
+            <p>Mi nombre es Daniel Loredo Lopez</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, praesentium eos maxime laborum perferendis aspernatur deserunt officia ratione eum, vel nisi doloremque aperiam, tenetur illo fugit esse reiciendis iusto sit.</p>
+        </div>
+    </div>
+
+    <div class="tabla">
+        <h2>Mis datos</h2>
+        <table>
+            <tr>
+                <th>Escuela</th>
+                <th>Grado</th>
+                <th>Enlace</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="botones">
+        <button class="buttonPrincipal" onclick="window.location.href='Diversion.html'">Diversión</button>
+        <button class="buttonPrincipal " onclick="window.location.href='Ciencia.html'">Ciencia</button>
+    </div>
+
+    <footer>
+        <p>Mi página web - 2026</p>
+    </footer>
+</body>
+</html>

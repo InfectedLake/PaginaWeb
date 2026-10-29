@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencia</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #CBEEF3;
+            margin: 0;
+            color: #222;
+        }
+        .contenedor { 
+            width: 100%;
+            max-width: 1200px;
+            height: fit-content;
+            margin: auto;
+
+        }
+        header { 
+            background-color: #880D1E;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .contenido { 
+            background-color: white;
+            padding: 25px;
+            margin-top: 25px;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        .contenido img{
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 3px solid #F26A8D;
+            margin-bottom: 32%;
+        }
+        .contenido video {
+            width: 400px;
+            height: 220px;
+            object-fit: cover;
+            border: 3px solid #F26A8D;
+        }
+        .video-contenedor {
+            width: 400px;
+            flex-shrink: 0;
+        }
+        h2 { 
+            color: #880D1E;
+         }
+        .botones {
+            width: 90%;
+            max-width: 850px;
+            margin: 35px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .buttonPrincipal {
+            background-color: #DD2D4A;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            margin: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .buttonPrincipal:hover {
+            background-color: #880D1E;
+        }
+
+        footer { 
+            text-align: center;
+            margin-top: 25px; 
+            padding: 15px;
+            background-color: #F49CBB;
+        }
+        
+        .WhoIsHe {
+            background-color: #F49CBB;
+            flex: 1;
+            margin-bottom: 0%;
+            padding: 20px;
+            height: 550px;
+        }
+
+        .ImageCollage{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .ImageCollage img{
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid #F26A8D;
+            margin: 5px;
+        }
+
+        @media (max-width: 650px) {
+            .contenido {
+                display: block;
+                text-align: center;
+            }
+
+            .WhoIsHe {
+                text-align: left;
+                margin: 20px 0;
+            }
+
+            .video-contenedor {
+                width: 100%;
+            }
+
+            .contenido video {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ciencia</h1>
+    </header>
+
+    <div class="contenedor">
+        <div class="contenido">
+            <img src="fotoNiel.jpg" alt="Foto Cantante">
+            <div class="WhoIsHe">
+                <h2>Niel deGrasse Tyson</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, praesentium eos maxime laborum perferendis aspernatur deserunt officia ratione eum, vel nisi doloremque aperiam, tenetur illo fugit esse reiciendis iusto sit.</p>
+            </div>
+            <div class="video-contenedor">
+                <video src="VideoNiel1.mp4" controls></video>
+                <video src="VideoNiel2.mp4" controls></video>
+                <div class="ImageCollage">
+                    <img src="fotoNiel1.png" alt="Foto Ciencia">
+                    <img src="fotoNiel2.jpg" alt="Foto Ciencia">
+                    <img src="fotoNiel3.jpg" alt="Foto Ciencia">   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="botones">
+        <button class="buttonPrincipal" onclick="window.location.href='Diversion.html'">Diversión</button>
+        <button class="buttonPrincipal" onclick="window.location.href='Principal.html'">Principal</button>
+    </div>
+
+    <footer>
+        <p>Página de Ciencia</p>
+    </footer>
+</body>
+</html>
